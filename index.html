@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+
+<html>
+
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            font-family: Helvetica, sans-serif;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .dropdown {
+            float: left;
+            width: 75%;
+            margin-top: 10px;
+        }
+
+        .template {
+            float: left;
+            width: 25%;
+            margin-bottom: 12px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        </style>
+
+  <head>
+
+    <meta name = "viewport" content = "width=device-width">
+    <title>Project Sequoia</title>
+
+  </head>
+ 
+  <body>
+
+   <div id = "ihopethisworks">
+
+      <h2>Create a Game!</h2>
+      <p>Fill out the form to create an educational platformer game for your students to play!</p>
+
+
+      <h1></h1>
+      <label for = "question">Question 1:</label>
+      <input type = "text" id = "question" name = "question"><br><br>
+
+      <label for = "correct_ans">Correct Answer:</label>
+      <input type = "text" id = "correct_ans" name = "correct_ans"><br><br>
+
+      <label for = "distractor_1">Distractor 1:</label>
+      <input type = "text" id = "distractor_1" name = "distractor_1"><br><br>    
+
+      <label for = "distractor_2">Distractor 2:</label>
+      <input type = "text" id = "distractor_2" name = "distractor_2"><br><br>
+
+      <label for = "distractor_3">Distractor 3:</label>
+      <input type = "text" id = "distractor_3" name = "distractor_3"><br><br>
+
+      <label for = "distractor_4">Distractor 4:</label>
+      <input type = "text" id = "distractor_4" name = "distractor_4"><br><br>
+
+
+      <h1></h1>
+      <label for = "question1">Question 2:</label>
+      <input type = "text" id = "question1" name = "question1"><br><br>
+
+      <label for = "correct_ans1">Correct Answer:</label>
+      <input type = "text" id = "correct_ans1" name = "correct_ans1"><br><br>
+
+      <label for = "distractor_1.1">Distractor 1:</label>
+      <input type = "text" id = "distractor_1.1" name = "distractor_1.1"><br><br>    
+
+      <label for = "distractor_2.1">Distractor 2:</label>
+      <input type = "text" id = "distractor_2.1" name = "distractor_2.1"><br><br>
+
+      <label for = "distractor_3.1">Distractor 3:</label>
+      <input type = "text" id = "distractor_3.1" name = "distractor_3.1"><br><br>
+
+      <label for = "distractor_4.1">Distractor 4:</label>
+      <input type = "text" id = "distractor_4.1" name = "distractor_4.1"><br><br>
+
+
+      <h1></h1>
+      <label for = "question2">Question 3:</label>
+      <input type = "text" id = "question2" name = "question2"><br><br>
+
+      <label for = "correct_ans2">Correct Answer:</label>
+      <input type = "text" id = "correct_ans2" name = "correct_ans2"><br><br>
+
+      <label for = "distractor_1.2">Distractor 1:</label>
+      <input type = "text" id = "distractor_1.2" name = "distractor_1.2"><br><br>    
+
+      <label for = "distractor_2.2">Distractor 2:</label>
+      <input type = "text" id = "distractor_2.2" name = "distractor_2.2"><br><br>
+
+      <label for = "distractor_3.2">Distractor 3:</label>
+      <input type = "text" id = "distractor_3.2" name = "distractor_3.2"><br><br>
+
+      <label for = "distractor_4.1">Distractor 4:</label>
+      <input type = "text" id = "distractor_4.2" name = "distractor_4.2"><br><br>
+    
+      <button onclick = "startGame()">Start Game</button>
+
+   </div>
+
+    <h1 id="sometitle">Project Sequoia</h1>
+    <p id="general-instructions"></p>
+    <p id="assignment-instructions"></p>
+    <canvas></canvas>
+
+    <script src = "game.js" type = "text/javascript"></script>
+
+  </body>
+
+</html>
